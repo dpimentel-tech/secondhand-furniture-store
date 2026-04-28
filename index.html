@@ -1,104 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Second Chance Furniture</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>Second Chance Furniture</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <header class="header">
+    <h1>Second Chance Furniture</h1>
 
-<section class="hero">
-  <h2>Quality Furniture at Affordable Prices</h2>
-  <p>Give your home style without overspending. Browse our secondhand collection.</p>
-  <button>Shop Now</button>
-</section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="categories">
-  <h2>Categories</h2>
-  <div class="category-list">
-    <div>Sofas</div>
-    <div>Tables</div>
-    <div>Chairs</div>
-    <div>Bedroom</div>
-  </div>
-</section>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Affordable Secondhand Furniture for Every Home</h2>
+      <p>
+        Find quality used furniture at fair prices. Sofas, tables, chairs, bedroom pieces,
+        and more — carefully selected for comfort, style, and value.
+      </p>
+      <a href="#products" class="btn">Shop Collection</a>
+    </div>
+  </section>
 
-<section class="products">
-  <h2>Featured Products</h2>
+  <section class="categories">
+    <h2>Shop by Category</h2>
 
-  <div class="product-grid">
+    <div class="category-grid">
+      <div class="category-card">Sofas</div>
+      <div class="category-card">Tables</div>
+      <div class="category-card">Chairs</div>
+      <div class="category-card">Bedroom</div>
+    </div>
+  </section>
 
-    <article>
-      <h3>Modern Beige Sofa</h3>
-      <p>Condition: Like New</p>
-      <p>$280</p>
-      <button>Contact Seller</button>
-    </article>
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
 
-    <article>
-      <h3>Wood Dining Table</h3>
-      <p>Condition: Good</p>
-      <p>$180</p>
-      <button>Contact Seller</button>
-    </article>
+    <div class="product-grid">
 
-    <article>
-      <h3>Queen Bed Frame</h3>
-      <p>Condition: Used</p>
-      <p>$220</p>
-      <button>Contact Seller</button>
-    </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Modern beige sofa">
+        <h3>Modern Beige Sofa</h3>
+        <p class="condition">Condition: Like New</p>
+        <p class="price">$280</p>
+        <button>Contact Seller</button>
+      </article>
 
-    <article>
-      <h3>Office Chair</h3>
-      <p>Condition: Like New</p>
-      <p>$90</p>
-      <button>Contact Seller</button>
-    </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80" alt="Wood dining table">
+        <h3>Wood Dining Table</h3>
+        <p class="condition">Condition: Good</p>
+        <p class="price">$180</p>
+        <button>Contact Seller</button>
+      </article>
 
-    <article>
-      <h3>TV Stand</h3>
-      <p>Condition: Good</p>
-      <p>$120</p>
-      <button>Contact Seller</button>
-    </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Queen bed frame">
+        <h3>Queen Bed Frame</h3>
+        <p class="condition">Condition: Used</p>
+        <p class="price">$220</p>
+        <button>Contact Seller</button>
+      </article>
 
-    <article>
-      <h3>Coffee Table</h3>
-      <p>Condition: Used</p>
-      <p>$75</p>
-      <button>Contact Seller</button>
-    </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=800&q=80" alt="Office chair">
+        <h3>Office Chair</h3>
+        <p class="condition">Condition: Like New</p>
+        <p class="price">$90</p>
+        <button>Contact Seller</button>
+      </article>
 
-  </div>
-</section>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=800&q=80" alt="TV stand">
+        <h3>TV Stand</h3>
+        <p class="condition">Condition: Good</p>
+        <p class="price">$120</p>
+        <button>Contact Seller</button>
+      </article>
 
-<section class="about">
-  <h2>About Us</h2>
-  <p>We specialize in affordable, high-quality secondhand furniture. Our goal is to give every piece a second life while helping customers save money.</p>
-</section>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=800&q=80" alt="Coffee table">
+        <h3>Coffee Table</h3>
+        <p class="condition">Condition: Used</p>
+        <p class="price">$75</p>
+        <button>Contact Seller</button>
+      </article>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>📍 Miami, FL</p>
-  <p>📞 (305) 000-0000</p>
-  <p>🕒 Mon - Sat: 9 AM - 6 PM</p>
-</section>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Second Chance Furniture</p>
-</footer>
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Second Chance Furniture helps customers find affordable, stylish, and reliable
+      secondhand furniture. Our mission is to give quality pieces a second life while
+      helping families furnish their homes without overspending.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Miami, FL</p>
+    <p>📞 Phone: (305) 000-0000</p>
+    <p>🕒 Hours: Monday - Saturday, 9 AM - 6 PM</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Second Chance Furniture. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
