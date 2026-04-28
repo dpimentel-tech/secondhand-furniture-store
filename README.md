@@ -1,23 +1,28 @@
 # Secondhand Furniture Store
 
 ## 📌 Description
+A responsive secondhand furniture store website built with HTML and CSS.
 
-A simple secondhand furniture store website built with HTML and CSS.
+The project presents a fictional furniture business with product categories, featured items, pricing, contact information, and a clean commercial layout.
 
 ## 🚀 Technologies Used
-
-* HTML5
-* CSS3
+- HTML5
+- CSS3
+- Responsive Design
 
 ## 💻 Features
+- Hero section with call-to-action
+- Product categories
+- Featured furniture product cards
+- Prices and condition labels
+- Contact section
+- Responsive layout for desktop and mobile
 
-* Product listing
-* Categories section
-* Contact section
-* Basic layout styling
+## 🎯 Project Goal
+The goal of this project is to practice building a real business-style landing page using semantic HTML, CSS grid, responsive design, and clean visual structure.
 
 ## 📈 Next Steps
-
-* Improve layout with grid system
-* Add images for products
-* Make the design responsive
+- Add product filtering
+- Add shopping cart layout
+- Add JavaScript interactivity
+- Improve accessibility
