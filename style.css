@@ -1,81 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background-color: #f5f3ef;
+  color: #2e2e2e;
 }
 
 /* HEADER */
-header {
+.header {
   background-color: #2e2e2e;
   color: white;
-  padding: 20px;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d6cfc7;
 }
 
 /* HERO */
 .hero {
-  background-color: #d6cfc7;
-  text-align: center;
-  padding: 60px;
-}
-
-/* CATEGORIES */
-.categories {
-  padding: 20px;
-}
-
-.category-list {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  gap: 15px;
+  align-items: center;
+  padding: 60px 8%;
+  color: white;
 }
 
-.category-list div {
-  background-color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
+.hero-content {
+  max-width: 650px;
 }
 
-/* PRODUCTS */
-.products {
-  padding: 20px;
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-article {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-article:hover {
-  transform: scale(1.03);
-}
-
+.btn,
 button {
   background-color: #6b4f3b;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
-/* ABOUT + CONTACT */
-.about, .contact {
-  padding: 20px;
+.btn:hover,
+button:hover {
+  background-color: #4f392a;
+}
+
+/* CATEGORIES */
+.categories,
+.products,
+.about,
+.contact {
+  padding: 50px 8%;
+}
+
+.categories h2,
+.products h2,
+.about h2,
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* PRODUCTS */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card h3,
+.product-card p,
+.product-card button {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.condition {
+  color: #666;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6b4f3b;
+}
+
+/* ABOUT */
+.about {
+  background-color: #ded7cf;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
 }
 
 /* FOOTER */
@@ -83,5 +176,50 @@ footer {
   background-color: #2e2e2e;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .product-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 60vh;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
 }
